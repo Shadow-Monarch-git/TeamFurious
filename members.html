@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Furious Members</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    *{
+        text-decoration: none;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+    }
+
+    header {
+      background: #a083c9;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    #members {
+      width: 100%;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .members-title {
+      font-size: 32px;
+      color: #a083c9;
+      margin-bottom: 10px;
+    }
+
+    .members-subtitle {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .members-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--cards-per-row, 3), 1fr);
+  gap: 20px;
+}
+
+.member-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+}
+
+.member-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.member-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.member-info h3 {
+  color: #a083c9;
+  margin: 10px 0 5px;
+}
+
+.member-info p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Responsive adjustments using CSS variable fallback */
+@media (max-width: 1200px) {
+  :root {
+    --cards-per-row: 3;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    --cards-per-row: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --cards-per-row: 1;
+  }
+}
+
+/* Back to Home Button */
+.back-home-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #a083c9;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+.back-home:hover {
+  background-color: #592986;
+  color: #fff;
+}
+
+
+    footer {
+      background: #a083c9;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Team Furious Members</h1>
+</header>
+
+<section id="members">
+  <div class="container">
+        <h2 class="members-title">Our Team Members</h2>
+        <p class="members-subtitle">Meet the talented players of Team Furious</p>
+
+    <div class="members-grid">
+        <!-- Member Card 1 -->
+        <div class="member-card">
+        <img src="junayed.jpg" alt="Junaed">
+        <div class="member-info">
+            <h3>Junaed Ahmed</h3>
+            <p>ID: 22.01.15</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 2 -->
+        <div class="member-card">
+        <img src="jisan.jpg" alt="jisan">
+        <div class="member-info">
+            <h3>Jisan Ullah</h3>
+            <p>ID: 22.01.24</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 3 -->
+        <div class="member-card">
+        <img src="siam.jpg" alt="siam">
+        <div class="member-info">
+            <h3>MD Seam Hossain</h3>
+            <p>ID: 22.01.30</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 4 -->
+        <div class="member-card">
+        <img src="rana.jpg" alt="rana">
+        <div class="member-info">
+            <h3>Mohammad Rana Islam</h3>
+            <p>ID: 22.01.48</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 5 -->
+        <div class="member-card">
+        <img src="jakariya.jpg" alt="jakaria">
+        <div class="member-info">
+            <h3>Jakaria Siddiki Siam</h3>
+            <p>ID: 22.01.50</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 6 -->
+        <div class="member-card">
+        <img src="opy.jpg" alt="opi">
+        <div class="member-info">
+            <h3>Md Hasnat Jahan Khan Opy</h3>
+            <p>ID: 22.01.65</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 7 -->
+        <div class="member-card">
+        <img src="moin.jpg" alt="moin">
+        <div class="member-info">
+            <h3>Moin Khan</h3>
+            <p>ID: 22.01.70</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+
+        <!-- Member Card 8 -->
+        <div class="member-card">
+        <img src="abir.jpg" alt="abir">
+        <div class="member-info">
+            <h3>Muhtasinur Rahman Abir</h3>
+            <p>ID: 22.01.71</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 9 -->
+        <div class="member-card">
+        <img src="mridul.jpg" alt="mridul">
+        <div class="member-info">
+            <h3>Md Rofiqul Islam Mridul </h3>
+            <p>ID: 22.01.74</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+        <!-- Member Card 10 -->
+        <div class="member-card">
+        <img src="sazzad.jpg" alt="sazzad">
+        <div class="member-info">
+            <h3>Sazzad Miya</h3>
+            <p>ID: 22.01.78</p>
+            <p>Department: CST</p>
+            <p>Semester: 6th</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Back to Home Button -->
+    <div class="back-home-container">
+        <a href="index.html" class="back-home">← Back to Home</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2025 Team Furious | All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
