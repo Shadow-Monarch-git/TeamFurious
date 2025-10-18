@@ -1,0 +1,202 @@
+/* =========================
+   Team Furious - media.css
+   Fully Responsive Enhancements
+   Desktop-first (Bootstrap Breakpoints)
+   ========================= */
+
+/* ---------- Desktops & Laptops (≤1200px) ---------- */
+@media (max-width: 1200px) {
+  #about .team-bio h2 { font-size: 24px; }
+  #about p { font-size: 15px; }
+
+  footer .footer-about,
+  footer .footer-links,
+  footer .footer-contact {
+    text-align: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* ---------- Tablets (≤992px) ---------- */
+@media (max-width: 992px) {
+  /* Navbar */
+  .navbar {
+    background-color: #a083c9;
+    padding: 10px 15px;
+  }
+  .navbar h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .navbar-toggler {
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    background: none;
+  }
+  .navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  .navbar-collapse {
+    background-color: #a083c9;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 10px 0;
+    display: block;
+  }
+  .navbar-nav .nav-link:hover {
+    background: #8a6bbb;
+    border-radius: 5px;
+  }
+
+  /* Banner */
+  .banner-img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  /* About Section */
+  #about .row {
+    flex-direction: column;
+  }
+  #about .team-bio,
+  #about .about-pic {
+    width: 100%;
+    text-align: center;
+  }
+  #about .about-pic img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  /* Members */
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
+
+  /* Footer */
+  footer .row { text-align: center; }
+  footer .col-lg-4 { margin-bottom: 20px; }
+}
+
+/* ---------- Mobile Landscape (≤768px) ---------- */
+@media (max-width: 768px) {
+  .navbar h3 { display: none; }
+
+  /* About */
+  #about .team-bio h2 { font-size: 20px; }
+  #about p { font-size: 14px; }
+
+  /* Gallery */
+  .gallery-title { font-size: 24px; }
+  .gallery-subtitle { font-size: 15px; }
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+  }
+
+  /* Members */
+  .members-title { font-size: 24px; }
+  .members-subtitle { font-size: 15px; }
+  .members-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  /* Cards */
+  .gallery-item img,
+  .member-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: all 0.3s ease;
+  }
+
+  /* Footer */
+  footer { padding: 20px 10px; }
+  footer p { font-size: 14px; }
+}
+
+/* ---------- Mobile Portrait (≤576px) ---------- */
+@media (max-width: 576px) {
+  /* Navbar */
+  .navbar img { height: 60px; }
+  .navbar-toggler { font-size: 22px; }
+
+  /* Banner */
+  .banner-img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* About Section */
+  #about h2 { font-size: 18px; }
+  #about p { font-size: 13px; padding: 0 10px; }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .gallery-item img {
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Members */
+  .members-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .member-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .member-card img {
+    height: auto;
+  }
+  .member-info h3 {
+    font-size: 16px;
+  }
+  .member-info p {
+    font-size: 14px;
+  }
+
+  /* Footer */
+  footer {
+    font-size: 13px;
+  }
+  footer .social-icons a {
+    font-size: 18px;
+    margin: 0 8px;
+  }
+
+  /* Buttons */
+  .back-home {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
